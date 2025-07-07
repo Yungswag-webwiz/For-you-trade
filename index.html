@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trading App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Trading App</h1>
+    <p id="price">Loading prices...</p>
+    <div id="auth">
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="register()">Register</button>
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="trade" style="display:none;">
+      <p id="balance">Balance: $0</p>
+      <select id="action">
+        <option value="buy">Buy</option>
+        <option value="sell">Sell</option>
+      </select>
+      <input type="number" id="amount" placeholder="Amount" />
+      <button onclick="makeTrade()">Trade</button>
+      <p id="message"></p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
